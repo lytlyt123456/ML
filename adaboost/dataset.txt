@@ -1,0 +1,15 @@
+1. 下载 Extended Yale B 人脸数据集，并将其解压到项目的数据目录 data/ExtendedYaleB/ 下。
+
+Extended Yale B 人脸数据集（官方）：http://vision.ucsd.edu/datasets/extended-yale-face-database-b-b
+
+网盘：https://pan.baidu.com/s/1lj7zfbqqCgcUZlxoITxpDg?pwd=x4e5
+
+2. 准备非人脸图像（如风景、动物等），并将它们放入 data/nonfaces/ 目录下。
+
+参考非人脸图像数据集：https://pan.baidu.com/s/16J-Kl8c0nUHNEGFpyRAj6Q?pwd=m87w
+
+3. 采样人脸数据：
+
+运行 sample_extended_yaleb.py 脚本，从 Extended Yale B 数据集中随机采样15位不同人物，每人11张图像，共165张人脸图像作为正样本。执行完毕后，data/faces/ 目录下会生成采样好的人脸图像。
+
+python sample_extended_yaleb.py --src "data/ExtendedYaleB" --out "data/faces" --folders 15 --per-folder 11 --seed 42

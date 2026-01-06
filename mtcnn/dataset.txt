@@ -1,0 +1,5 @@
+PNet and RNet were trained using the WIDER Face dataset (containing 32,203 images and 159,424 face annotations, including faces of various scales, poses, and lighting conditions).
+Link: http://shuoyang1213.me/WIDERFACE/
+
+ONet was trained using the FaceDetection Training Dataset (containing 5,590 LFW images and 7,876 web images).
+Link: http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm
