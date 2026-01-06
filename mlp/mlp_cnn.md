@@ -21,7 +21,7 @@ $$\widehat{y} = a^{(k)} = softmax(z^{(k)})$$
 $$ReLU \left( z_{ij} \right) = \max\left( 0,z_{ij} \right) = \left\{ \begin{array}{r}
 z_{ij},z_{ij} > 0 \\
 0,z_{ij} \leq 0
-\end{array} \right.\ $$
+\end{array} \right}\ $$
 
 若不引入ReLU激活函数，则：
 
