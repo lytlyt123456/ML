@@ -18,7 +18,7 @@ $$\widehat{y} = a^{(k)} = softmax(z^{(k)})$$
 
 其中，ReLU为隐藏层激活函数：
 
-$$ReLU \left( z_{ij} \right) = \max\left( 0,z_{ij} \right) = \left\{ \begin{array}{r}
+$$ReLU\left( z_{ij} \right) = \max\left( 0,z_{ij} \right) = \left\{ \begin{array}{r}
 z_{ij},z_{ij} > 0 \\
 0,z_{ij} \leq 0
 \end{array} \right.\ $$
@@ -38,7 +38,7 @@ $$z^{(2)} = z^{(1)}W^{(2)} + b^{(2)} = \left( xW^{(1)} + b^{(1)} \right)W^{(2)} 
 
 softmax为输出层激活函数：
 
-$$softmax \left( z_{ij} \right) = \frac{exp(z_{ij})}{\sum_{t}^{}{exp(z_{it})}}$$
+$$softmax\left( z_{ij} \right) = \frac{exp(z_{ij})}{\sum_{t}^{}{exp(z_{it})}}$$
 
 对于分类问题，输出层激活函数用于将每个样本对应的输出向量转化为类别预测概率分布$\widehat{y} \in \mathbb{R}^{N \times C}$。损失函数采用交叉熵损失：
 
